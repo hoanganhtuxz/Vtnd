@@ -1,0 +1,114 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vũ thị ngọc diệp</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      body {
+        background: #e3f1ff;
+      }
+
+      .box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+      }
+
+      .heart {
+        position: relative;
+        margin: auto;
+        height: 170px;
+        width: 200px;
+        animation: animate 1s infinite;
+      }
+
+      .heart:before,
+      .heart:after {
+        content: "";
+        position: absolute;
+        background: #78a7ff;
+        width: 100px;
+        height: 160px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+      }
+
+      .heart:before {
+        left: 100px;
+        transform: rotate(-45deg);
+        transform-origin: 0 100%;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+      }
+
+      .heart:after {
+        left: 0;
+        transform: rotate(45deg);
+        transform-origin: 100% 100%;
+      }
+
+      @keyframes animate {
+        0% {
+          transform: scale(1);
+        }
+
+        30% {
+          transform: scale(0.8);
+        }
+
+        60% {
+          transform: scale(1.2);
+        }
+
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      h1 {
+        margin: 0 auto;
+        color: black;
+        margin-top: 15px;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+      h2 {
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 0px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <audio src=""></audio>
+    <div class="grid grid-cols-4 gap-4">
+      <div class="col-span-1  border shadow-md h-full mx-auto">
+        <!--  -->
+        </iframe>
+        <!-- <h3>Danh Mục</h3>
+        <ul>
+          <li><a href="">phần 1</a></li>
+          <li><a href="">phần 2</a></li>
+        </ul> -->
+      </div>
+      <div>
+        <div class="box col-span-3">
+          <div class="heart">
+          </div>
+          <h2>Yêu em 💙🥰</h2>
+          <h1>Vũ Thị Ngọc Diêp</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
